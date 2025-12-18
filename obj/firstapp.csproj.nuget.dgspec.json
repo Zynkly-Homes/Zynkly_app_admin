@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/navneetagarwal/Desktop/donet/firstapp/firstapp.csproj": {}
+    "/Users/navneetagarwal/Desktop/donet/C#/Day1/firstapp/firstapp.csproj": {}
   },
   "projects": {
-    "/Users/navneetagarwal/Desktop/donet/firstapp/firstapp.csproj": {
+    "/Users/navneetagarwal/Desktop/donet/C#/Day1/firstapp/firstapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/navneetagarwal/Desktop/donet/firstapp/firstapp.csproj",
+        "projectUniqueName": "/Users/navneetagarwal/Desktop/donet/C#/Day1/firstapp/firstapp.csproj",
         "projectName": "firstapp",
-        "projectPath": "/Users/navneetagarwal/Desktop/donet/firstapp/firstapp.csproj",
+        "projectPath": "/Users/navneetagarwal/Desktop/donet/C#/Day1/firstapp/firstapp.csproj",
         "packagesPath": "/Users/navneetagarwal/.nuget/packages/",
-        "outputPath": "/Users/navneetagarwal/Desktop/donet/firstapp/obj/",
+        "outputPath": "/Users/navneetagarwal/Desktop/donet/C#/Day1/firstapp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/navneetagarwal/.nuget/NuGet/NuGet.Config"
