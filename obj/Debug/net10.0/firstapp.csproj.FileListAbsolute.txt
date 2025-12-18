@@ -1,0 +1,14 @@
+/Users/navneetagarwal/Desktop/donet/firstapp/bin/Debug/net10.0/firstapp
+/Users/navneetagarwal/Desktop/donet/firstapp/bin/Debug/net10.0/firstapp.deps.json
+/Users/navneetagarwal/Desktop/donet/firstapp/bin/Debug/net10.0/firstapp.runtimeconfig.json
+/Users/navneetagarwal/Desktop/donet/firstapp/bin/Debug/net10.0/firstapp.dll
+/Users/navneetagarwal/Desktop/donet/firstapp/bin/Debug/net10.0/firstapp.pdb
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/firstapp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/firstapp.AssemblyInfoInputs.cache
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/firstapp.AssemblyInfo.cs
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/firstapp.csproj.CoreCompileInputs.cache
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/firstapp.dll
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/refint/firstapp.dll
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/firstapp.pdb
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/firstapp.genruntimeconfig.cache
+/Users/navneetagarwal/Desktop/donet/firstapp/obj/Debug/net10.0/ref/firstapp.dll
