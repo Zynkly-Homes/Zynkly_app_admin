@@ -16,9 +16,9 @@ class Program
     {
         
 
-        Console.WriteLine("navneet");
-        Aoc.Area();
-        Cover.Convert();
+        // Console.WriteLine("navneet");
+        // Aoc.Area();
+        // Cover.Convert();
         Conditions.Con();
  
     }
