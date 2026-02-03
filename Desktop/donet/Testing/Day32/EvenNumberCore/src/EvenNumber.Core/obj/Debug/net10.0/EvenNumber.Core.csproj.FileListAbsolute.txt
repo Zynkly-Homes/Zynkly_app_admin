@@ -1,0 +1,24 @@
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/bin/Debug/net10.0/EvenNumber.Core.deps.json
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/bin/Debug/net10.0/EvenNumber.Core.dll
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/bin/Debug/net10.0/EvenNumber.Core.pdb
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.AssemblyInfoInputs.cache
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.AssemblyInfo.cs
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.csproj.CoreCompileInputs.cache
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.sourcelink.json
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.dll
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/refint/EvenNumber.Core.dll
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.pdb
+C:/All semesters/Training/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/ref/EvenNumber.Core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/bin/Debug/net10.0/EvenNumber.Core.deps.json
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/bin/Debug/net10.0/EvenNumber.Core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/bin/Debug/net10.0/EvenNumber.Core.pdb
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.AssemblyInfoInputs.cache
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.AssemblyInfo.cs
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.csproj.CoreCompileInputs.cache
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.sourcelink.json
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/refint/EvenNumber.Core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/EvenNumber.Core.pdb
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/EvenNumberCore/src/EvenNumber.Core/obj/Debug/net10.0/ref/EvenNumber.Core.dll

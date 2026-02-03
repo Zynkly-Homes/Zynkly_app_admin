@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EvenNumber.Core/EvenNumber.Core.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/EvenNumber.Tests/EvenNumber.Tests.csproj" />
+  </Folder>
+</Solution>
