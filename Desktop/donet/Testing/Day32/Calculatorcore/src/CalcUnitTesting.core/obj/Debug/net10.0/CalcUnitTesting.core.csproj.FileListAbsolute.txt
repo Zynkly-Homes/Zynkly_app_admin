@@ -1,0 +1,45 @@
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.exe
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.deps.json
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.runtimeconfig.json
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.dll
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.pdb
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.GeneratedMSBuildEditorConfig.editorconfig
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.AssemblyInfoInputs.cache
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.AssemblyInfo.cs
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.csproj.CoreCompileInputs.cache
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.sourcelink.json
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.dll
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/refint/CalcUnitTesting.core.dll
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.pdb
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.genruntimeconfig.cache
+C:/All semesters/Training/CalculatorCore/src/CalcUnitTesting.core/obj/Debug/net10.0/ref/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.deps.json
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.runtimeconfig.json
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.pdb
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.AssemblyInfoInputs.cache
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.AssemblyInfo.cs
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.csproj.CoreCompileInputs.cache
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.sourcelink.json
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/refint/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.pdb
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.genruntimeconfig.cache
+/Users/navneetagarwal/Downloads/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/ref/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.deps.json
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.runtimeconfig.json
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/bin/Debug/net10.0/CalcUnitTesting.core.pdb
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.AssemblyInfoInputs.cache
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.AssemblyInfo.cs
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.csproj.CoreCompileInputs.cache
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.sourcelink.json
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/refint/CalcUnitTesting.core.dll
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.pdb
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/CalcUnitTesting.core.genruntimeconfig.cache
+/Users/navneetagarwal/Desktop/donet/Testing/Day32/Calculatorcore/src/CalcUnitTesting.core/obj/Debug/net10.0/ref/CalcUnitTesting.core.dll
