@@ -1,0 +1,678 @@
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/appsettings.Development.json
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/appsettings.json
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/draftapp.staticwebassets.runtime.json
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/draftapp.staticwebassets.endpoints.json
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/draftapp.exe
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/draftapp.deps.json
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/draftapp.runtimeconfig.json
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/draftapp.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/draftapp.pdb
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/rpswa.dswa.cache.json
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.GeneratedMSBuildEditorConfig.editorconfig
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.AssemblyInfoInputs.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.AssemblyInfo.cs
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.csproj.CoreCompileInputs.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.MvcApplicationPartsAssemblyInfo.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.RazorAssemblyInfo.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.RazorAssemblyInfo.cs
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/rjimswa.dswa.cache.json
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/scopedcss/bundle/draftapp.styles.css
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/scopedcss/projectbundle/draftapp.bundle.scp.css
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/evu54g0glg-{0}-b9sayid5wm-b9sayid5wm.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/c65r5isvj4-{0}-61n19gt1b8-61n19gt1b8.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/d3ad6mibw4-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/p2a7a9a6x6-{0}-bqjiyaj88i-bqjiyaj88i.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/hzi8d3u6or-{0}-c2jlpeoesf-c2jlpeoesf.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/ofby12r8uq-{0}-erw9l3u2r3-erw9l3u2r3.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/36o1acsdpp-{0}-aexeepp0ev-aexeepp0ev.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/11qw2e49bp-{0}-d7shbmvgxk-d7shbmvgxk.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/a5jrqxv577-{0}-ausgxo2sd3-ausgxo2sd3.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/yg17gj7vcg-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/pf16jd9h3c-{0}-cosvhxvwiu-cosvhxvwiu.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/picc8rrjx9-{0}-ub07r2b239-ub07r2b239.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/b1stlx3hbr-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/a0i84dwiij-{0}-b7pk76d08c-b7pk76d08c.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/gv7mdh2qyd-{0}-fsbi9cje9m-fsbi9cje9m.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/rjfsa937g7-{0}-rzd6atqjts-rzd6atqjts.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/nymr6jaf2u-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/v67vpd1pjx-{0}-dxx9fxp4il-dxx9fxp4il.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/x30szc51ao-{0}-jd9uben2k1-jd9uben2k1.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/mkpagtkhfx-{0}-khv3u5hwcm-khv3u5hwcm.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/90ml1cn42d-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/kg8shrs928-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/hi4pdoskbl-{0}-c2oey78nd0-c2oey78nd0.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/rwyr57rvyy-{0}-tdbxkamptv-tdbxkamptv.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/zisiwqtri4-{0}-j5mq2jizvt-j5mq2jizvt.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/cd69kpvmfi-{0}-06098lyss8-06098lyss8.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/0ik93k7hkh-{0}-nvvlpmu67g-nvvlpmu67g.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/jiapxchiyb-{0}-s35ty4nyc5-s35ty4nyc5.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/scgm8ill08-{0}-pj5nd1wqec-pj5nd1wqec.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/nvfcms1l97-{0}-46ein0sx1k-46ein0sx1k.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/n6zmifht84-{0}-v0zj4ognzu-v0zj4ognzu.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/gqexq1rf9c-{0}-37tfw0ft22-37tfw0ft22.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/ri6ioodqey-{0}-hrwsygsryq-hrwsygsryq.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/ypkhmtz1mh-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/uwsalxs2a0-{0}-ft3s53vfgj-ft3s53vfgj.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/d5kwzi8qay-{0}-6cfz1n2cew-6cfz1n2cew.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/ps1pydsjco-{0}-6pdc2jztkx-6pdc2jztkx.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/i2f7xppfgf-{0}-493y06b0oq-493y06b0oq.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/amutlf0y94-{0}-iovd86k7lj-iovd86k7lj.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/r627r0rxuj-{0}-vr1egmr9el-vr1egmr9el.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/eqj5la66d1-{0}-kbrnm935zg-kbrnm935zg.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/b2nspwarjg-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/r6yutnyefa-{0}-y7v9cxd14o-y7v9cxd14o.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/vhsq7eqqwo-{0}-notf2xhcfb-notf2xhcfb.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/oj4ywq5bqs-{0}-h1s4sie4z3-h1s4sie4z3.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/tmbhprlv5q-{0}-63fj8s7r0e-63fj8s7r0e.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/wnb4tounju-{0}-0j3bgjxly4-0j3bgjxly4.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/vx1mrjf918-{0}-47otxtyo56-47otxtyo56.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/mer3w46w51-{0}-4v8eqarkd7-4v8eqarkd7.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/fomja1vlhy-{0}-356vix0kms-356vix0kms.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/g59qnisi04-{0}-83jwlth58m-83jwlth58m.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/lvt1q2fbi9-{0}-mrlpezrjn3-mrlpezrjn3.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/yuijx1rg0x-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/ndzvkgqfy4-{0}-ag7o75518u-ag7o75518u.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/eeelvv2yj7-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/6841zrkst4-{0}-0i3buxo5is-0i3buxo5is.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/nmlkwlonx0-{0}-o1o13a6vjx-o1o13a6vjx.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/ultenl53yh-{0}-ttgo8qnofa-ttgo8qnofa.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/x4a98rfi43-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/29y04720g8-{0}-muycvpuwrr-muycvpuwrr.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/r3b2jn41tk-{0}-87fc7y1x7t-87fc7y1x7t.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/ymuq9viou7-{0}-mlv21k5csn-mlv21k5csn.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/e4co7dhune-{0}-w9ybu54imd-w9ybu54imd.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/compressed/h4kxlj952i-{0}-w9ybu54imd-w9ybu54imd.gz
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/staticwebassets.build.json
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/staticwebassets.build.json.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/staticwebassets.development.json
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/swae.build.ex.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.dll
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/refint/draftapp.dll
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.pdb
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.genruntimeconfig.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/ref/draftapp.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Azure.Core.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Azure.Identity.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Humanizer.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Build.Framework.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Extensions.DependencyModel.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Identity.Client.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Identity.Client.Extensions.Msal.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.SolutionPersistence.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Mono.TextTemplating.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Newtonsoft.Json.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.ClientModel.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.CodeDom.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Composition.AttributedModel.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Composition.Convention.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Composition.Hosting.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Composition.Runtime.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Composition.TypedParts.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Memory.Data.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.csproj.AssemblyReference.cache
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/draftapp.csproj.Up2Date
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.AspNetCore.Razor.Language.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.Build.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Elfie.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Features.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Razor.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Scripting.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.DiaSymReader.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.DotNet.Scaffolding.Shared.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.NET.StringTools.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/dotnet-aspnet-codegenerator-design.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.Common.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.Configuration.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.DependencyResolver.Core.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.Frameworks.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.LibraryModel.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.Packaging.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.ProjectModel.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.Protocol.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/NuGet.Versioning.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/System.Reflection.MetadataLoadContext.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/af/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ar/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/az/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/bg/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/bn-BD/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/da/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/el/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fa/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fi-FI/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr-BE/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/he/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/hr/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/hu/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/hy/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/id/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/is/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko-KR/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ku/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/lv/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ms-MY/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/mt/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/nb/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/nb-NO/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/nl/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ro/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/sk/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/sl/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/sr/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/sr-Latn/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/sv/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/th-TH/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/uk/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/uz-Cyrl-UZ/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/uz-Latn-UZ/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/vi/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-CN/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Humanizer.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/Capgemini Training/codevs/draftapp/obj/Debug/net10.0/staticwebassets.upToDateCheck.txt
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/appsettings.Development.json
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/appsettings.json
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/draftapp.staticwebassets.runtime.json
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/draftapp.staticwebassets.endpoints.json
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/draftapp
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/draftapp.deps.json
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/draftapp.runtimeconfig.json
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/draftapp.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/draftapp.pdb
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Azure.Core.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Azure.Identity.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Humanizer.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.AspNetCore.Razor.Language.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Build.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Build.Framework.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Elfie.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Features.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Razor.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Scripting.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.DiaSymReader.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.DotNet.Scaffolding.Shared.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Extensions.DependencyModel.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Identity.Client.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.NET.StringTools.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.SolutionPersistence.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/dotnet-aspnet-codegenerator-design.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Mono.TextTemplating.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/Newtonsoft.Json.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.Common.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.Configuration.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.DependencyResolver.Core.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.Frameworks.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.LibraryModel.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.Packaging.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.ProjectModel.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.Protocol.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/NuGet.Versioning.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.ClientModel.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.CodeDom.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Composition.AttributedModel.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Composition.Convention.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Composition.Hosting.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Composition.Runtime.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Composition.TypedParts.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Memory.Data.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Reflection.MetadataLoadContext.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/af/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ar/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/az/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/bg/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/bn-BD/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/da/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/el/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fa/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fi-FI/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr-BE/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/he/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/hr/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/hu/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/hy/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/id/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/is/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko-KR/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ku/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/lv/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ms-MY/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/mt/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/nb/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/nb-NO/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/nl/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ro/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/sk/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/sl/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/sr/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/sr-Latn/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/sv/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/th-TH/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/uk/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/uz-Cyrl-UZ/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/uz-Latn-UZ/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/vi/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-CN/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Humanizer.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/cs/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/de/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/es/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/fr/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/it/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ja/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ko/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pl/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/ru/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/tr/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/navneetagarwal/Downloads/draftapp/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.csproj.AssemblyReference.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.AssemblyInfoInputs.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.AssemblyInfo.cs
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.csproj.CoreCompileInputs.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.MvcApplicationPartsAssemblyInfo.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.RazorAssemblyInfo.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.RazorAssemblyInfo.cs
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.sourcelink.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/scopedcss/bundle/draftapp.styles.css
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/scopedcss/projectbundle/draftapp.bundle.scp.css
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/evu54g0glg-{0}-b9sayid5wm-b9sayid5wm.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/c65r5isvj4-{0}-61n19gt1b8-61n19gt1b8.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/d3ad6mibw4-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/p2a7a9a6x6-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/hzi8d3u6or-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/ofby12r8uq-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/36o1acsdpp-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/11qw2e49bp-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/a5jrqxv577-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/yg17gj7vcg-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/pf16jd9h3c-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/picc8rrjx9-{0}-ub07r2b239-ub07r2b239.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/b1stlx3hbr-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/a0i84dwiij-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/gv7mdh2qyd-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/rjfsa937g7-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/nymr6jaf2u-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/v67vpd1pjx-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/x30szc51ao-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/mkpagtkhfx-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/90ml1cn42d-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/kg8shrs928-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/hi4pdoskbl-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/rwyr57rvyy-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/zisiwqtri4-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/cd69kpvmfi-{0}-06098lyss8-06098lyss8.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/0ik93k7hkh-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/jiapxchiyb-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/scgm8ill08-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/nvfcms1l97-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/n6zmifht84-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/gqexq1rf9c-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/ri6ioodqey-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/ypkhmtz1mh-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/uwsalxs2a0-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/d5kwzi8qay-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/ps1pydsjco-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/i2f7xppfgf-{0}-493y06b0oq-493y06b0oq.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/amutlf0y94-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/r627r0rxuj-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/eqj5la66d1-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/b2nspwarjg-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/r6yutnyefa-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/vhsq7eqqwo-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/oj4ywq5bqs-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/tmbhprlv5q-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/wnb4tounju-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/vx1mrjf918-{0}-47otxtyo56-47otxtyo56.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/mer3w46w51-{0}-4v8eqarkd7-4v8eqarkd7.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/fomja1vlhy-{0}-356vix0kms-356vix0kms.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/g59qnisi04-{0}-83jwlth58m-83jwlth58m.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/lvt1q2fbi9-{0}-mrlpezrjn3-mrlpezrjn3.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/yuijx1rg0x-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/ndzvkgqfy4-{0}-ag7o75518u-ag7o75518u.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/eeelvv2yj7-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/6841zrkst4-{0}-0i3buxo5is-0i3buxo5is.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/nmlkwlonx0-{0}-o1o13a6vjx-o1o13a6vjx.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/ultenl53yh-{0}-ttgo8qnofa-ttgo8qnofa.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/x4a98rfi43-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/29y04720g8-{0}-muycvpuwrr-muycvpuwrr.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/r3b2jn41tk-{0}-87fc7y1x7t-87fc7y1x7t.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/ymuq9viou7-{0}-mlv21k5csn-mlv21k5csn.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/e4co7dhune-{0}-9qbovmf6xf-9qbovmf6xf.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/compressed/h4kxlj952i-{0}-9qbovmf6xf-9qbovmf6xf.gz
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/staticwebassets.build.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/staticwebassets.development.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/swae.build.ex.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.csproj.Up2Date
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.dll
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/refint/draftapp.dll
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.pdb
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/draftapp.genruntimeconfig.cache
+/Users/navneetagarwal/Downloads/draftapp/obj/Debug/net10.0/ref/draftapp.dll

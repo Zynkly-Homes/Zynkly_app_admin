@@ -1,0 +1,121 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using draftapp.Models;
+using draftapp.Repositories;
+
+namespace draftapp.Controllers
+{
+    public class StudentsController : Controller
+    {
+        private readonly IStudentRepository _studentRepository;
+
+        public StudentsController(IStudentRepository studentRepository)
+        {
+            _studentRepository = studentRepository;
+        }
+
+        // GET: Students
+        public async Task<IActionResult> Index(string q)
+        {
+            var students = await _studentRepository.GetAllAsync(q);
+            ViewBag.SearchQuery = q;
+            return View(students);
+        }
+
+        // GET: Students/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var student = await _studentRepository.GetByIdAsync(id.Value);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            return View(student);
+        }
+
+        // GET: Students/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Students/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("StudentId,FullName,Email,Phone,Status,JoinDate")] Student student)
+        {
+            if (ModelState.IsValid)
+            {
+                student.CreatedAt = DateTime.Now;
+                await _studentRepository.AddAsync(student);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(student);
+        }
+
+        // GET: Students/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var student = await _studentRepository.GetByIdAsync(id.Value);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            return View(student);
+        }
+
+        // POST: Students/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("StudentId,FullName,Email,Phone,Status,JoinDate,CreatedAt")] Student student)
+        {
+            if (id != student.StudentId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                await _studentRepository.UpdateAsync(student);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(student);
+        }
+
+        // GET: Students/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var student = await _studentRepository.GetByIdAsync(id.Value);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            return View(student);
+        }
+
+        // POST: Students/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            await _studentRepository.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
+    }
+}
