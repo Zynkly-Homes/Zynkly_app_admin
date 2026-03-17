@@ -1,0 +1,6 @@
+@CubeServices_HostAddress = http://localhost:5100
+
+GET {{CubeServices_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
