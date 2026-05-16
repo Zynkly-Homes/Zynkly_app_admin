@@ -18,10 +18,11 @@ export default function CleanerDetail() {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
 
-  const { data: cleaner, isLoading } = useQuery({
+  const { data: cleaner, isLoading, isError, error } = useQuery({
     queryKey: ['cleaner', id],
     queryFn: () => getCleanerById(id),
     enabled: !!id,
+    retry: false,
   });
 
   const toggleMutation = useMutation({
@@ -36,6 +37,15 @@ export default function CleanerDetail() {
 
   if (isLoading) {
     return <div className="max-w-4xl"><SkeletonTable rows={6} cols={3} /></div>;
+  }
+
+  if (isError) {
+    return (
+      <div className="max-w-4xl p-6 bg-destructive/10 border border-destructive/30 rounded-lg text-destructive">
+        <h3 className="font-bold">Failed to load cleaner</h3>
+        <p className="text-sm mt-1">{error?.message || 'Unknown database error'}</p>
+      </div>
+    );
   }
 
   if (!cleaner) {
@@ -99,7 +109,10 @@ export default function CleanerDetail() {
         <CardHeader><CardTitle className="text-sm">Profile</CardTitle></CardHeader>
         <CardContent className="grid grid-cols-2 gap-3 text-sm">
           <div><p className="text-muted-foreground">Email</p><p>{cleaner.email ?? '—'}</p></div>
-          <div><p className="text-muted-foreground">Vehicle</p><p>{cleaner.vehicle ?? '—'}</p></div>
+          <div><p className="text-muted-foreground">Transport</p><p>{cleaner.transport ?? '—'}</p></div>
+          <div><p className="text-muted-foreground">State</p><p>{cleaner.state ?? '—'}</p></div>
+          <div><p className="text-muted-foreground">City</p><p>{cleaner.city ?? '—'}</p></div>
+          <div><p className="text-muted-foreground">Pincode</p><p>{cleaner.pincode ?? '—'}</p></div>
           <div><p className="text-muted-foreground">Joined</p><p>{formatDate(cleaner.created_at)}</p></div>
         </CardContent>
       </Card>
@@ -139,7 +152,7 @@ export default function CleanerDetail() {
                   <tr key={b.id} className="border-b border-border hover:bg-muted/20">
                     <td className="px-4 py-3">{formatDate(b.scheduled_at)}</td>
                     <td className="px-4 py-3">{b.user?.name ?? '—'}</td>
-                    <td className="px-4 py-3">{b.service?.name ?? '—'}</td>
+                    <td className="px-4 py-3">{b.service_ids?.join(', ') ?? '—'}</td>
                     <td className="px-4 py-3"><StatusBadge status={b.status} type="booking" /></td>
                     <td className="px-4 py-3 font-medium">{formatCurrency(b.total_amount)}</td>
                   </tr>

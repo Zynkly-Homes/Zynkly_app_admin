@@ -52,13 +52,11 @@ export default function Dashboard() {
   const { data: stats, isLoading: statsLoading } = useQuery({
     queryKey: ['dashboard', 'stats', pincodes],
     queryFn: () => getDashboardStats(pincodes),
-    staleTime: 60_000,
   });
 
   const { data: recentBookings, isLoading: bookingsLoading } = useQuery({
     queryKey: ['dashboard', 'recent-bookings', pincodes],
     queryFn: () => getRecentBookings(pincodes),
-    staleTime: 30_000,
   });
 
   const { data: revenueData } = useQuery({

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 import useAuthStore from '@/store/authStore';
 import { Skeleton } from '@/components/shared/SkeletonLoader';
@@ -13,20 +13,27 @@ import { Skeleton } from '@/components/shared/SkeletonLoader';
  *
  * Edge case handled: if session exists but admin is null (e.g., stale Zustand
  * persist from before the email-fallback fix), trigger a one-time refresh.
+ * A 5-second safety timeout ensures we never get stuck on skeleton forever.
  */
 export function ProtectedRoute({ superAdminOnly = false }) {
   const { session, admin, loading, refreshAdmin } = useAuthStore();
+  const [refreshTimedOut, setRefreshTimedOut] = useState(false);
 
   // If we have a session but no admin record, it might be stale persist data.
-  // Trigger refreshAdmin once to re-fetch with the new email-fallback logic.
+  // Trigger refreshAdmin once to re-fetch. If it takes > 5s, bail to login.
   useEffect(() => {
     if (!loading && session && !admin) {
       refreshAdmin();
+      const t = setTimeout(() => setRefreshTimedOut(true), 5_000);
+      return () => clearTimeout(t);
     }
+    // Reset timeout flag whenever state stabilizes
+    setRefreshTimedOut(false);
   }, [loading, session, admin, refreshAdmin]);
 
-  // Show skeleton while loading or while the edge-case refresh is in flight
-  if (loading || (session && !admin)) {
+  // Show skeleton while auth is resolving — but never forever
+  const isWaiting = loading || (session && !admin && !refreshTimedOut);
+  if (isWaiting) {
     return (
       <div className="min-h-screen flex flex-col gap-4 p-8">
         <Skeleton className="h-8 w-48" />
@@ -42,8 +49,7 @@ export function ProtectedRoute({ superAdminOnly = false }) {
     return <Navigate to="/login" replace />;
   }
 
-  // Confirmed: session exists but admin record definitely not found after refresh
-  // (refreshAdmin sets admin to null if truly not found — redirect to login with message)
+  // Session exists but no admin record found (even after refresh/timeout)
   if (!admin) {
     return <Navigate to="/login" replace />;
   }

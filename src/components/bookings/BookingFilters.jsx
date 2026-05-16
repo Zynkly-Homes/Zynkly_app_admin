@@ -60,8 +60,8 @@ export function BookingFilters({ filters, onFiltersChange }) {
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="all">All Statuses</SelectItem>
-          {Object.entries(BOOKING_STATUS_LABELS).map(([value, label]) => (
-            <SelectItem key={value} value={value}>{label}</SelectItem>
+          {Object.entries(BOOKING_STATUS).map(([key, value]) => (
+            <SelectItem key={value} value={value}>{BOOKING_STATUS_LABELS[value]}</SelectItem>
           ))}
         </SelectContent>
       </Select>

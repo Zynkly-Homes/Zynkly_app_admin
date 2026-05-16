@@ -22,7 +22,6 @@ export default function BookingsList() {
     queryKey: ['bookings', filters, pagination.pageIndex, pagination.pageSize, pincodes],
     queryFn: () => getBookings({ filters, page: pagination.pageIndex, pageSize: pagination.pageSize, pincodes }),
     keepPreviousData: true,
-    staleTime: 30_000,
   });
 
   const handleFiltersChange = (newFilters) => {

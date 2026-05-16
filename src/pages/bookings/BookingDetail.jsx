@@ -2,12 +2,17 @@ import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import {
-  ArrowLeft, UserCheck, CheckCircle, XCircle, Clock, Loader2, MapPin,
+  ArrowLeft, UserCheck, CheckCircle, XCircle, Clock, Loader2, MapPin, ChevronDown,
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { StatusBadge } from '@/components/shared/StatusBadge';
+import {
+  DropdownMenu, DropdownMenuTrigger, DropdownMenuContent,
+  DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+} from '@/components/ui/dropdown-menu';
 import { AssignCleanerModal } from '@/components/bookings/AssignCleanerModal';
 import {
   AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
@@ -18,7 +23,7 @@ import { getBookingById, updateBookingStatus, assignCleaner } from '@/services/b
 import { formatCurrency, formatDateTime, shortId } from '@/lib/utils';
 import { logAdminAction } from '@/lib/auth';
 import useAuthStore from '@/store/authStore';
-import { BOOKING_STATUS } from '@/lib/constants';
+import { BOOKING_STATUS, BOOKING_STATUS_LABELS } from '@/lib/constants';
 
 /**
  * BookingDetail page — full booking info with actions.
@@ -32,10 +37,11 @@ export default function BookingDetail() {
   const [assignOpen, setAssignOpen] = useState(false);
   const [confirmAction, setConfirmAction] = useState(null); // { status, label }
 
-  const { data: booking, isLoading } = useQuery({
+  const { data: booking, isLoading, isError, error } = useQuery({
     queryKey: ['booking', id],
     queryFn: () => getBookingById(id),
     enabled: !!id,
+    retry: false,
   });
 
   const statusMutation = useMutation({
@@ -68,6 +74,15 @@ export default function BookingDetail() {
     );
   }
 
+  if (isError) {
+    return (
+      <div className="max-w-4xl p-6 bg-destructive/10 border border-destructive/30 rounded-lg text-destructive">
+        <h3 className="font-bold">Failed to load booking</h3>
+        <p className="text-sm mt-1">{error?.message || 'Unknown database error'}</p>
+      </div>
+    );
+  }
+
   if (!booking) {
     return (
       <div className="text-center py-20 text-muted-foreground">
@@ -95,12 +110,48 @@ export default function BookingDetail() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <StatusBadge status={booking.status} type="booking" />
-        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Status override */}
+        <Card>
+          <CardHeader><CardTitle className="text-sm">Status (Manual Override)</CardTitle></CardHeader>
+          <CardContent className="space-y-3 text-sm">
+            <div className="flex items-center justify-between">
+              <StatusBadge status={booking.status} type="booking" />
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="sm" className="gap-1.5 h-7 text-xs" disabled={statusMutation.isPending}>
+                    Change Status <ChevronDown className="w-3.5 h-3.5" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuLabel>Set status to</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuRadioGroup
+                    value={booking.status}
+                    onValueChange={(newStatus) => {
+                      if (newStatus === booking.status) return;
+                      setConfirmAction({
+                        status: newStatus,
+                        label: `change status to ${BOOKING_STATUS_LABELS[newStatus]}`,
+                      });
+                    }}
+                  >
+                    <DropdownMenuRadioItem value={BOOKING_STATUS.PENDING}>Pending</DropdownMenuRadioItem>
+                    <DropdownMenuRadioItem value={BOOKING_STATUS.CONFIRMED}>Assigned</DropdownMenuRadioItem>
+                    <DropdownMenuRadioItem value={BOOKING_STATUS.IN_PROGRESS}>In Process</DropdownMenuRadioItem>
+                    <DropdownMenuRadioItem value={BOOKING_STATUS.COMPLETED}>Completed</DropdownMenuRadioItem>
+                  </DropdownMenuRadioGroup>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+            <p className="text-xs text-muted-foreground">
+              Use this only when the automated flow fails to update the booking.
+            </p>
+          </CardContent>
+        </Card>
+
         {/* Customer info */}
         <Card>
           <CardHeader><CardTitle className="text-sm">Customer</CardTitle></CardHeader>

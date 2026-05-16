@@ -27,16 +27,39 @@ const useAuthStore = create(
       initialize: async () => {
         set({ loading: true });
 
-        const { data: { session } } = await supabase.auth.getSession();
+        // Safety net: never let loading stay true longer than 10s
+        const safetyTimer = setTimeout(() => {
+          if (get().loading) {
+            console.warn('[Auth] initialize() safety timeout — forcing loading:false');
+            set({ loading: false });
+          }
+        }, 10_000);
 
-        if (session) {
-          const admin = await getAdminRecord(
-            session.user.id,
-            session.user.email,  // pass email for fallback lookup
-          );
-          set({ session, admin, loading: false });
-        } else {
-          set({ session: null, admin: null, loading: false });
+        try {
+          const { data: { session } } = await supabase.auth.getSession();
+
+          if (session) {
+            // Set loading:false immediately with whatever we have from persist
+            // so the UI never hangs waiting for getAdminRecord
+            const persistedAdmin = get().admin;
+            if (persistedAdmin) {
+              set({ session, loading: false });
+            }
+
+            // Then fetch fresh admin record in the background
+            const admin = await getAdminRecord(
+              session.user.id,
+              session.user.email,
+            );
+            set({ session, admin, loading: false });
+          } else {
+            set({ session: null, admin: null, loading: false });
+          }
+        } catch (err) {
+          console.error('[Auth] initialize() error:', err);
+          set({ loading: false });
+        } finally {
+          clearTimeout(safetyTimer);
         }
 
         // Subscribe to auth changes (token refresh, sign out, etc.)
@@ -50,11 +73,16 @@ const useAuthStore = create(
             }
 
             if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
-              const admin = await getAdminRecord(
-                session.user.id,
-                session.user.email,
-              );
-              set({ session, admin, loading: false });
+              try {
+                const admin = await getAdminRecord(
+                  session.user.id,
+                  session.user.email,
+                );
+                set({ session, admin, loading: false });
+              } catch (err) {
+                console.error('[Auth] onAuthStateChange admin fetch error:', err);
+                set({ session, loading: false });
+              }
             }
           }
         );

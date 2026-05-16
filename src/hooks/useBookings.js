@@ -14,7 +14,6 @@ export function useBookings(filters = {}, page = 0, pageSize = 20) {
     queryKey: ['bookings', filters, page, pageSize],
     queryFn: () => getBookings({ filters, page, pageSize }),
     keepPreviousData: true,
-    staleTime: 30_000, // 30 seconds
   });
 }
 

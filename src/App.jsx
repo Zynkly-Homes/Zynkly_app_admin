@@ -69,13 +69,20 @@ class ErrorBoundary extends Component {
   }
 }
 
-// React Query client — retry once, 30s stale time default
+// React Query client
+// - retry: 1 attempt on failure
+// - staleTime: 10s — data is considered stale quickly so it refreshes on remount
+// - refetchOnWindowFocus: true — re-fetches when user switches back to the tab
+// - refetchOnMount: true — always fetch fresh data when a page component mounts
+// - gcTime: 5min — keep unused cache for 5 minutes
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       retry: 1,
-      staleTime: 30_000,
-      refetchOnWindowFocus: false,
+      staleTime: 10_000,
+      gcTime: 5 * 60 * 1000,
+      refetchOnWindowFocus: true,
+      refetchOnMount: true,
     },
   },
 });

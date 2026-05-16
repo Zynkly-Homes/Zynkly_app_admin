@@ -3,9 +3,8 @@ import { supabase } from '../lib/supabase';
 /**
  * Fetch all cleaners with optional search and pincode scope.
  *
- * When `pincodes` is non-empty we look up the city names for those pincodes
- * in `serviceable_pincodes`, then filter cleaners by `city`. This is the best
- * proxy available since cleaners don't have a direct pincode column.
+ * When `pincodes` is non-empty we filter cleaners directly by their
+ * `pincode` column.
  *
  * @param {object}   options
  * @param {string}   options.search
@@ -20,21 +19,9 @@ export async function getCleaners({ search = '', page = 0, pageSize = 20, pincod
     .order('name', { ascending: true })
     .range(page * pageSize, (page + 1) * pageSize - 1);
 
-  // Resolve pincodes → cities, then filter cleaners by city
+  // Filter cleaners directly by pincode column
   if (pincodes.length > 0) {
-    const { data: pcRows } = await supabase
-      .from('serviceable_pincodes')
-      .select('city')
-      .in('pincode', pincodes)
-      .not('city', 'is', null);
-
-    const cities = [...new Set((pcRows ?? []).map((r) => r.city).filter(Boolean))];
-    if (cities.length > 0) {
-      query = query.in('city', cities);
-    } else {
-      // Assigned pincodes exist but no matching city found — return nothing
-      return { data: [], count: 0 };
-    }
+    query = query.in('pincode', pincodes);
   }
 
   if (search) {
@@ -55,8 +42,7 @@ export async function getCleanerById(id) {
     .select(`
       *,
       bookings(
-        id, status, scheduled_at, total_amount,
-        service:services(name),
+        id, status, scheduled_at, total_amount, service_ids,
         user:users(name)
       ),
       leaves:cleaner_leaves(id, date, reason)
@@ -72,14 +58,26 @@ export async function getCleanerById(id) {
  * Create a new cleaner.
  */
 export async function createCleaner(cleanerData) {
-  const { data, error } = await supabase
-    .from('cleaners')
-    .insert(cleanerData)
-    .select()
-    .single();
+  console.log('[cleanersService] createCleaner starting...');
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 15000);
+  
+  try {
+    const { data, error } = await supabase
+      .from('cleaners')
+      .insert(cleanerData)
+      .abortSignal(controller.signal);
 
-  if (error) throw error;
-  return data;
+    clearTimeout(timeoutId);
+    console.log('[cleanersService] createCleaner finished', { data, error });
+
+    if (error) throw error;
+    return data;
+  } catch (err) {
+    clearTimeout(timeoutId);
+    console.error('[cleanersService] createCleaner failed', err);
+    throw err;
+  }
 }
 
 /**
@@ -203,5 +201,20 @@ export async function getAvailableCleaners(scheduledAt, currentBookingId = null)
   } catch (err) {
     console.error('[getAvailableCleaners] Failed:', err);
     return [];
+  }
+}
+
+/**
+ * Delete a cleaner by ID.
+ */
+export async function deleteCleaner(id) {
+  const { error } = await supabase
+    .from('cleaners')
+    .delete()
+    .eq('id', id);
+
+  if (error) {
+    console.error('[cleanersService] Delete failed:', error.message);
+    throw error;
   }
 }

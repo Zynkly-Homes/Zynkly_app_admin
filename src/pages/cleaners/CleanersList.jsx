@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 import { Plus, Search, UserCheck } from 'lucide-react';
@@ -34,8 +34,11 @@ const cleanerSchema = z.object({
   name: z.string().min(2, 'Name is required'),
   phone: z.string().min(10, 'Enter a valid phone number'),
   email: z.string().email().optional().or(z.literal('')),
-  vehicle: z.string().optional(),
-  id_photo_url: z.string().url().optional().or(z.literal('')),
+  transport: z.string().optional(),
+  state: z.string().optional(),
+  city: z.string().optional(),
+  pincode: z.string().optional(),
+  avatar_url: z.string().url().optional().or(z.literal('')),
 });
 
 /**
@@ -58,7 +61,7 @@ export default function CleanersList() {
     staleTime: 60_000,
   });
 
-  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm({
+  const { register, handleSubmit, reset, formState: { errors } } = useForm({
     resolver: zodResolver(cleanerSchema),
   });
 
@@ -75,15 +78,32 @@ export default function CleanersList() {
   });
 
   const createMutation = useMutation({
-    mutationFn: (data) => createCleaner({ ...data, is_available: true, is_on_leave: false }),
+    mutationFn: (formData) => {
+      // Strip empty strings → null so Supabase nullable columns don't choke
+      const cleaned = Object.fromEntries(
+        Object.entries(formData).map(([k, v]) => [k, v === '' ? null : v])
+      );
+      console.log('[AddCleaner] cleaned payload', cleaned);
+      return createCleaner({ ...cleaned, is_available: true, is_on_leave: false });
+    },
     onSuccess: () => {
       toast.success('Cleaner added successfully');
       queryClient.invalidateQueries({ queryKey: ['cleaners'] });
       setAddOpen(false);
       reset();
     },
-    onError: (err) => toast.error(err.message),
+    onError: (err) => {
+      console.error('[AddCleaner] insert failed', err);
+      const text = [err?.message, err?.details, err?.hint]
+        .filter(Boolean)
+        .join(' — ') || 'Unknown error from Supabase';
+      toast.error(text);
+    },
   });
+
+  useEffect(() => {
+    if (addOpen) createMutation.reset();
+  }, [addOpen]);
 
   const columns = useMemo(() => [
     {
@@ -107,9 +127,22 @@ export default function CleanersList() {
       },
     },
     {
-      accessorKey: 'vehicle',
-      header: 'Vehicle',
+      accessorKey: 'transport',
+      header: 'Transport',
       cell: ({ getValue }) => getValue() ?? '—',
+    },
+    {
+      id: 'location',
+      header: 'Location',
+      cell: ({ row }) => {
+        const { city, pincode } = row.original;
+        if (!city && !pincode) return '—';
+        return (
+          <span className="text-xs">
+            {[city, pincode].filter(Boolean).join(', ')}
+          </span>
+        );
+      },
     },
     {
       id: 'status',
@@ -233,13 +266,25 @@ export default function CleanersList() {
           <DialogHeader>
             <DialogTitle>Add New Cleaner</DialogTitle>
           </DialogHeader>
-          <form onSubmit={handleSubmit((d) => createMutation.mutate(d))} className="space-y-3">
+          <form
+            onSubmit={handleSubmit(
+              (d) => {
+                console.log('[AddCleaner] submitting', d);
+                createMutation.mutate(d);
+              },
+              (errs) => console.warn('[AddCleaner] validation failed', errs),
+            )}
+            className="space-y-3"
+          >
             {[
               { id: 'cleaner-name', name: 'name', label: 'Full Name *', type: 'text', placeholder: 'Amit Kumar' },
               { id: 'cleaner-phone', name: 'phone', label: 'Phone *', type: 'tel', placeholder: '9876543210' },
-              { id: 'cleaner-email', name: 'email', label: 'Email', type: 'email', placeholder: 'optional' },
-              { id: 'cleaner-vehicle', name: 'vehicle', label: 'Vehicle', type: 'text', placeholder: 'e.g. Bicycle' },
-              { id: 'cleaner-photo', name: 'id_photo_url', label: 'ID Photo URL', type: 'url', placeholder: 'https://...' },
+              { id: 'cleaner-email', name: 'email', label: 'Email', type: 'text', placeholder: 'optional' },
+              { id: 'cleaner-transport', name: 'transport', label: 'Transport', type: 'text', placeholder: 'e.g. Bicycle, Scooter' },
+              { id: 'cleaner-state', name: 'state', label: 'State', type: 'text', placeholder: 'e.g. Maharashtra' },
+              { id: 'cleaner-city', name: 'city', label: 'City', type: 'text', placeholder: 'e.g. Mumbai' },
+              { id: 'cleaner-pincode', name: 'pincode', label: 'Pincode', type: 'text', placeholder: 'e.g. 400001' },
+              { id: 'cleaner-avatar', name: 'avatar_url', label: 'Avatar URL', type: 'text', placeholder: 'https://example.com/photo.jpg' },
             ].map(({ id, name, label, type, placeholder }) => (
               <div key={name} className="space-y-1.5">
                 <Label htmlFor={id}>{label}</Label>
@@ -247,9 +292,22 @@ export default function CleanersList() {
                 {errors[name] && <p className="text-xs text-destructive">{errors[name].message}</p>}
               </div>
             ))}
+            {createMutation.isError && (
+              <div className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-xs text-destructive">
+                <strong>Failed to add cleaner:</strong>{' '}
+                {createMutation.error?.message ?? 'Unknown error'}
+                {createMutation.error?.code && (
+                  <span className="block opacity-80 mt-1">
+                    Code: {createMutation.error.code}
+                  </span>
+                )}
+              </div>
+            )}
             <DialogFooter>
               <Button type="button" variant="outline" onClick={() => setAddOpen(false)}>Cancel</Button>
-              <Button type="submit" disabled={isSubmitting}>Add Cleaner</Button>
+              <Button type="submit" disabled={createMutation.isPending}>
+                {createMutation.isPending ? 'Adding…' : 'Add Cleaner'}
+              </Button>
             </DialogFooter>
           </form>
         </DialogContent>
