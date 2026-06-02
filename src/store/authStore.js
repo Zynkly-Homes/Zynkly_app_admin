@@ -116,8 +116,19 @@ const useAuthStore = create(
           return {
             error: {
               message:
-                'Your account exists but is not in the admin panel. ' +
-                'Ask a super admin to add you, or check Supabase → admins table.',
+                'This account is not authorized to access the admin panel.',
+            },
+          };
+        }
+
+        // Block deactivated admins (super_admin is never blocked)
+        if (admin.role !== 'super_admin' && admin.is_active === false) {
+          await supabase.auth.signOut();
+          set({ otpPending: false });
+          return {
+            error: {
+              message:
+                'Your admin access has been deactivated. Please contact the super admin.',
             },
           };
         }
@@ -151,7 +162,19 @@ const useAuthStore = create(
         if (!admin) {
           await supabase.auth.signOut();
           set({ otpPending: false });
-          return { error: { message: 'Admin record not found.' } };
+          return { error: { message: 'This account is not authorized to access the admin panel.' } };
+        }
+
+        // Block deactivated admins (super_admin is never blocked)
+        if (admin.role !== 'super_admin' && admin.is_active === false) {
+          await supabase.auth.signOut();
+          set({ otpPending: false });
+          return {
+            error: {
+              message:
+                'Your admin access has been deactivated. Please contact the super admin.',
+            },
+          };
         }
 
         set({ session: data.session, admin, otpPending: false });
@@ -195,8 +218,11 @@ const useAuthStore = create(
     }),
     {
       name: 'zynkly-admin-auth',
-      // Only persist session — admin is re-fetched on each auth state change
-      partialize: (state) => ({ session: state.session }),
+      // Persist session + admin — admin is refreshed in background by onAuthStateChange
+      partialize: (state) => ({ 
+        session: state.session, 
+        admin: state.admin,
+      }),
     }
   )
 );

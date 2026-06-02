@@ -152,7 +152,7 @@ export default function CleanerDetail() {
                   <tr key={b.id} className="border-b border-border hover:bg-muted/20">
                     <td className="px-4 py-3">{formatDate(b.scheduled_at)}</td>
                     <td className="px-4 py-3">{b.user?.name ?? '—'}</td>
-                    <td className="px-4 py-3">{b.service_ids?.join(', ') ?? '—'}</td>
+                    <td className="px-4 py-3">{b.services?.map(s => s.name).join(', ') || '—'}</td>
                     <td className="px-4 py-3"><StatusBadge status={b.status} type="booking" /></td>
                     <td className="px-4 py-3 font-medium">{formatCurrency(b.total_amount)}</td>
                   </tr>

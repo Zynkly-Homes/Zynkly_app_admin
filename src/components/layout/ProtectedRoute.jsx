@@ -19,15 +19,21 @@ export function ProtectedRoute({ superAdminOnly = false }) {
   const { session, admin, loading, refreshAdmin } = useAuthStore();
   const [refreshTimedOut, setRefreshTimedOut] = useState(false);
 
-  // If we have a session but no admin record, it might be stale persist data.
-  // Trigger refreshAdmin once to re-fetch. If it takes > 5s, bail to login.
+  // Only refresh admin once per "session-without-admin" state.
+  // Critical: do NOT reset refreshTimedOut on every effect run — that
+  // creates a skeleton-stuck flicker on route transitions.
   useEffect(() => {
-    if (!loading && session && !admin) {
+    if (loading) return;
+    if (!session) {
+      setRefreshTimedOut(false);
+      return;
+    }
+    if (session && !admin) {
       refreshAdmin();
       const t = setTimeout(() => setRefreshTimedOut(true), 5_000);
       return () => clearTimeout(t);
     }
-    // Reset timeout flag whenever state stabilizes
+    // session && admin → stable, reset timeout flag for next time
     setRefreshTimedOut(false);
   }, [loading, session, admin, refreshAdmin]);
 

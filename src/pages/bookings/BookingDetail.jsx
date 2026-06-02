@@ -167,10 +167,10 @@ export default function BookingDetail() {
           <CardHeader><CardTitle className="text-sm">Service</CardTitle></CardHeader>
           <CardContent className="space-y-2 text-sm">
             <InfoRow
-              label="Service IDs"
+              label="Services"
               value={
-                booking.service_ids?.length
-                  ? <span className="font-mono text-xs break-all">{booking.service_ids.join(', ')}</span>
+                booking.services?.length
+                  ? <span className="text-xs break-all">{booking.services.map(s => s.name).join(', ')}</span>
                   : '—'
               }
             />

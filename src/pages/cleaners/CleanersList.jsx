@@ -32,13 +32,15 @@ import { cn } from '@/lib/utils';
 
 const cleanerSchema = z.object({
   name: z.string().min(2, 'Name is required'),
-  phone: z.string().min(10, 'Enter a valid phone number'),
-  email: z.string().email().optional().or(z.literal('')),
-  transport: z.string().optional(),
-  state: z.string().optional(),
-  city: z.string().optional(),
-  pincode: z.string().optional(),
-  avatar_url: z.string().url().optional().or(z.literal('')),
+  phone: z.string().regex(/^[+]?[0-9]{8,15}$/, 'Enter a valid phone number'),
+  username: z.string()
+    .regex(/^[a-z0-9_]{3,30}$/i, '3–30 chars, letters/digits/underscore only')
+    .transform((v) => v.toLowerCase()),
+  password: z.string().min(6, 'Min 6 characters'),
+  pincode: z.string().regex(/^[0-9]{6}$/, 'Pincode must be exactly 6 digits'),
+  transport: z.string().optional().or(z.literal('')),
+  state: z.string().optional().or(z.literal('')),
+  city: z.string().optional().or(z.literal('')),
 });
 
 /**
@@ -50,6 +52,8 @@ export default function CleanersList() {
   const queryClient = useQueryClient();
   const [search, setSearch] = useState('');
   const [addOpen, setAddOpen] = useState(false);
+  const [credentialsModal, setCredentialsModal] = useState(null);
+  // Will hold { login_email, password, cleaner_name } when set
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: DEFAULT_PAGE_SIZE });
   const { assignedPincodes, isScoped, hasNoPincodes } = useAdmin();
   const pincodes = isScoped ? assignedPincodes : [];
@@ -79,25 +83,28 @@ export default function CleanersList() {
 
   const createMutation = useMutation({
     mutationFn: (formData) => {
-      // Strip empty strings → null so Supabase nullable columns don't choke
+      // Strip empty strings → undefined so Edge Function gets clean payload
       const cleaned = Object.fromEntries(
-        Object.entries(formData).map(([k, v]) => [k, v === '' ? null : v])
+        Object.entries(formData)
+          .filter(([_, v]) => v !== '' && v !== null && v !== undefined)
       );
-      console.log('[AddCleaner] cleaned payload', cleaned);
-      return createCleaner({ ...cleaned, is_available: true, is_on_leave: false });
+      return createCleaner(cleaned);
     },
-    onSuccess: () => {
-      toast.success('Cleaner added successfully');
+    onSuccess: (response) => {
+      toast.success('Cleaner created successfully');
       queryClient.invalidateQueries({ queryKey: ['cleaners'] });
       setAddOpen(false);
       reset();
+      // Show the credentials modal
+      setCredentialsModal({
+        login_email: response.credentials.login_email,
+        password: response.credentials.password,
+        cleaner_name: response.cleaner.name,
+      });
     },
     onError: (err) => {
-      console.error('[AddCleaner] insert failed', err);
-      const text = [err?.message, err?.details, err?.hint]
-        .filter(Boolean)
-        .join(' — ') || 'Unknown error from Supabase';
-      toast.error(text);
+      console.error('[AddCleaner] create failed', err);
+      toast.error(err?.message || 'Failed to create cleaner');
     },
   });
 
@@ -277,19 +284,32 @@ export default function CleanersList() {
             className="space-y-3"
           >
             {[
-              { id: 'cleaner-name', name: 'name', label: 'Full Name *', type: 'text', placeholder: 'Amit Kumar' },
-              { id: 'cleaner-phone', name: 'phone', label: 'Phone *', type: 'tel', placeholder: '9876543210' },
-              { id: 'cleaner-email', name: 'email', label: 'Email', type: 'text', placeholder: 'optional' },
-              { id: 'cleaner-transport', name: 'transport', label: 'Transport', type: 'text', placeholder: 'e.g. Bicycle, Scooter' },
-              { id: 'cleaner-state', name: 'state', label: 'State', type: 'text', placeholder: 'e.g. Maharashtra' },
-              { id: 'cleaner-city', name: 'city', label: 'City', type: 'text', placeholder: 'e.g. Mumbai' },
-              { id: 'cleaner-pincode', name: 'pincode', label: 'Pincode', type: 'text', placeholder: 'e.g. 400001' },
-              { id: 'cleaner-avatar', name: 'avatar_url', label: 'Avatar URL', type: 'text', placeholder: 'https://example.com/photo.jpg' },
-            ].map(({ id, name, label, type, placeholder }) => (
+              { id: 'cleaner-name',     name: 'name',     label: 'Full Name *',
+                type: 'text', placeholder: 'Amit Kumar' },
+              { id: 'cleaner-phone',    name: 'phone',    label: 'Phone *',
+                type: 'tel',  placeholder: '9876543210' },
+              { id: 'cleaner-username', name: 'username', label: 'Login Username *',
+                type: 'text', placeholder: 'amit001',
+                helperText: 'Will become amit001@zynkly.com (used to log into worker app)' },
+              { id: 'cleaner-password', name: 'password', label: 'Login Password *',
+                type: 'text', placeholder: 'min 6 chars',
+                helperText: 'Share this with the cleaner — they will need it to log in' },
+              { id: 'cleaner-pincode',  name: 'pincode',  label: 'Service Pincode *',
+                type: 'text', placeholder: '141001' },
+              { id: 'cleaner-transport', name: 'transport', label: 'Transport',
+                type: 'text', placeholder: 'e.g. Bicycle, Scooter' },
+              { id: 'cleaner-state', name: 'state', label: 'State',
+                type: 'text', placeholder: 'e.g. Punjab' },
+              { id: 'cleaner-city',  name: 'city',  label: 'City',
+                type: 'text', placeholder: 'e.g. Ludhiana' },
+            ].map(({ id, name, label, type, placeholder, helperText }) => (
               <div key={name} className="space-y-1.5">
                 <Label htmlFor={id}>{label}</Label>
                 <Input id={id} type={type} placeholder={placeholder} {...register(name)} />
                 {errors[name] && <p className="text-xs text-destructive">{errors[name].message}</p>}
+                {!errors[name] && helperText && (
+                  <p className="text-xs text-muted-foreground">{helperText}</p>
+                )}
               </div>
             ))}
             {createMutation.isError && (
@@ -310,6 +330,59 @@ export default function CleanersList() {
               </Button>
             </DialogFooter>
           </form>
+        </DialogContent>
+      </Dialog>
+
+      {/* Credentials modal — shown after a successful cleaner creation */}
+      <Dialog
+        open={!!credentialsModal}
+        onOpenChange={(open) => { if (!open) setCredentialsModal(null); }}
+      >
+        <DialogContent className="max-w-sm">
+          <DialogHeader>
+            <DialogTitle>Cleaner Credentials</DialogTitle>
+          </DialogHeader>
+          {credentialsModal && (
+            <div className="space-y-3 text-sm">
+              <div className="rounded-md border bg-muted/50 p-3 space-y-2">
+                <p className="text-xs text-muted-foreground">
+                  Share these credentials with <strong>{credentialsModal.cleaner_name}</strong>.
+                  They will need them to log into the worker app.
+                </p>
+                <div>
+                  <p className="text-xs text-muted-foreground">Login Email</p>
+                  <p className="font-mono font-medium break-all">
+                    {credentialsModal.login_email}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground">Password</p>
+                  <p className="font-mono font-medium break-all">
+                    {credentialsModal.password}
+                  </p>
+                </div>
+              </div>
+              <p className="text-xs text-amber-600">
+                ⚠️ This password will not be shown again. Copy it now.
+              </p>
+            </div>
+          )}
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => {
+                const text = `Zynkly Worker App Login\nEmail: ${credentialsModal?.login_email}\nPassword: ${credentialsModal?.password}`;
+                navigator.clipboard?.writeText(text);
+                toast.success('Credentials copied to clipboard');
+              }}
+            >
+              Copy
+            </Button>
+            <Button type="button" onClick={() => setCredentialsModal(null)}>
+              Done
+            </Button>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>

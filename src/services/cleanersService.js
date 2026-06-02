@@ -42,8 +42,13 @@ export async function getCleanerById(id) {
     .select(`
       *,
       bookings(
-        id, status, scheduled_at, total_amount, service_ids,
-        user:users(name)
+        id, status, scheduled_at, total_amount, address,
+        user:users(name),
+        booking_services (
+          service_id,
+          price_at_booking,
+          services ( id, name, price )
+        )
       ),
       leaves:cleaner_leaves(id, date, reason)
     `)
@@ -51,33 +56,81 @@ export async function getCleanerById(id) {
     .single();
 
   if (error) throw error;
+
+  // Flatten booking_services on each nested booking
+  if (data?.bookings) {
+    data.bookings = data.bookings.map(b => ({
+      ...b,
+      services: (b.booking_services || []).map(bs => ({
+        ...bs.services,
+        price_at_booking: bs.price_at_booking,
+      })),
+      booking_services: undefined,
+    }));
+  }
+
   return data;
 }
 
 /**
- * Create a new cleaner.
+ * Create a new cleaner via the create-cleaner Edge Function.
+ * Returns { success, cleaner, credentials, message }.
  */
-export async function createCleaner(cleanerData) {
-  console.log('[cleanersService] createCleaner starting...');
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 15000);
-  
+export async function createCleaner(payload) {
+  // Forward the current session JWT — required by the Edge Function
+  const { data: { session } } = await supabase.auth.getSession();
+  if (!session) {
+    throw new Error('Not authenticated');
+  }
+
+  // Build the full Edge Function URL and call it manually with fetch.
+  // This bypasses supabase-js's error wrapping so we can read the actual
+  // error body returned by the function (e.g. "Phone is required").
+  const supabaseUrl = supabase.supabaseUrl || import.meta.env.VITE_SUPABASE_URL;
+  if (!supabaseUrl) {
+    throw new Error('Supabase URL is not configured');
+  }
+  const anonKey = supabase.supabaseKey || import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+  const url = `${supabaseUrl}/functions/v1/create-cleaner`;
+
+  let response;
   try {
-    const { data, error } = await supabase
-      .from('cleaners')
-      .insert(cleanerData)
-      .abortSignal(controller.signal);
+    response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${session.access_token}`,
+        'apikey': anonKey,
+      },
+      body: JSON.stringify(payload),
+    });
+  } catch (networkErr) {
+    throw new Error(`Network error calling create-cleaner: ${networkErr.message}`);
+  }
 
-    clearTimeout(timeoutId);
-    console.log('[cleanersService] createCleaner finished', { data, error });
+  // Read body as JSON. If parsing fails, fall back to text.
+  let body;
+  try {
+    body = await response.json();
+  } catch {
+    body = { error: `Server returned ${response.status} with non-JSON response` };
+  }
 
-    if (error) throw error;
-    return data;
-  } catch (err) {
-    clearTimeout(timeoutId);
-    console.error('[cleanersService] createCleaner failed', err);
+  if (!response.ok) {
+    // Function returned a 4xx/5xx — body should have { success: false, error }
+    const message = body?.error || `Edge Function failed with status ${response.status}`;
+    const err = new Error(message);
+    err.status = response.status;
+    err.details = body?.details;
     throw err;
   }
+
+  if (!body?.success) {
+    throw new Error(body?.error || 'Unknown error from create-cleaner');
+  }
+
+  return body; // { success, cleaner, credentials, message }
 }
 
 /**

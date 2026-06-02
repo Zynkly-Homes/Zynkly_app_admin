@@ -1,4 +1,7 @@
 import { useState, useMemo } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Shield, Plus, ToggleLeft, MapPin, X, Check } from 'lucide-react';
 import { toast } from 'sonner';
@@ -15,17 +18,27 @@ import {
 import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from '@/components/ui/select';
-import { getAdmins, updateAdminRole, updateAdminPincodes, deactivateAdmin } from '@/services/adminService';
+import { 
+  getAdmins, updateAdminRole, updateAdminPincodes, deactivateAdmin,
+  createAdmin,
+} from '@/services/adminService';
 import { getPincodes } from '@/services/adminService';
 import { formatDate } from '@/lib/utils';
 import { ADMIN_ROLES, ADMIN_ROLE_LABELS } from '@/lib/constants';
 import useAuthStore from '@/store/authStore';
 
+const createAdminSchema = z.object({
+  name: z.string().min(2, 'Name is required'),
+  email: z.string().email('Valid email is required'),
+  phone: z.string().regex(/^[+]?[0-9]{8,15}$/, 'Enter a valid phone number'),
+  password: z.string().min(8, 'Min 8 characters'),
+});
+
 /**
  * Admins page (Super Admin only) — manage admin accounts and their pincode assignments.
  *
  * Features:
- * - Invite new admin via Edge Function
+ * - Create new admin via Edge Function
  * - Change admin role
  * - Manage assigned pincodes per admin (multi-select from serviceable pincodes)
  * - Deactivate admin
@@ -34,11 +47,13 @@ export default function Admins() {
   const queryClient = useQueryClient();
   const currentAdmin = useAuthStore((s) => s.admin);
 
-  // Invite dialog state
-  const [inviteOpen, setInviteOpen] = useState(false);
-  const [inviteEmail, setInviteEmail] = useState('');
-  const [inviteRole, setInviteRole] = useState('admin');
-  const [inviteLoading, setInviteLoading] = useState(false);
+  // Create admin dialog state
+  const [createOpen, setCreateOpen] = useState(false);
+  const [createPincodes, setCreatePincodes] = useState([]);
+  // pincodes to assign to the new admin
+  const [createPincodeSearch, setCreatePincodeSearch] = useState('');
+  const [credentialsModal, setCredentialsModal] = useState(null);
+  // { login_email, password, admin_name } when set
 
   // Pincode management dialog state
   const [pincodeDialogAdmin, setPincodeDialogAdmin] = useState(null); // admin row being edited
@@ -110,29 +125,61 @@ export default function Admins() {
     );
   };
 
-  // ── Invite ──────────────────────────────────────────────────────────────
-  const handleInvite = async () => {
-    if (!inviteEmail) return;
-    setInviteLoading(true);
-    try {
-      const res = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/invite-admin`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-        },
-        body: JSON.stringify({ email: inviteEmail, role: inviteRole }),
+  // ── Create admin form ────────────────────────────────────────────────────
+  const {
+    register: registerCreate,
+    handleSubmit: handleSubmitCreate,
+    reset: resetCreate,
+    formState: { errors: createErrors },
+  } = useForm({
+    resolver: zodResolver(createAdminSchema),
+  });
+
+  const createMutation = useMutation({
+    mutationFn: (formData) => {
+      if (createPincodes.length === 0) {
+        return Promise.reject(new Error('At least one assigned pincode is required'));
+      }
+      return createAdmin({
+        ...formData,
+        assigned_pincodes: createPincodes,
       });
-      if (!res.ok) throw new Error('Invite failed — deploy the invite-admin Edge Function first.');
-      toast.success(`Invitation sent to ${inviteEmail}`);
-      setInviteOpen(false);
-      setInviteEmail('');
+    },
+    onSuccess: (response) => {
+      toast.success('Admin created successfully');
       queryClient.invalidateQueries({ queryKey: ['admins'] });
-    } catch (err) {
-      toast.error(err.message);
-    } finally {
-      setInviteLoading(false);
-    }
+      setCreateOpen(false);
+      resetCreate();
+      setCreatePincodes([]);
+      setCreatePincodeSearch('');
+      setCredentialsModal({
+        login_email: response.credentials.login_email,
+        password: response.credentials.password,
+        admin_name: response.admin.name,
+      });
+    },
+    onError: (err) => {
+      console.error('[CreateAdmin] failed', err);
+      toast.error(err?.message || 'Failed to create admin');
+    },
+  });
+
+  // Filter pincodes for the create dialog (mirror of the existing filter)
+  const createFilteredPincodes = useMemo(() => {
+    if (!allPincodes) return [];
+    const s = createPincodeSearch.toLowerCase();
+    return allPincodes.filter(
+      (p) =>
+        p.pincode.includes(s) ||
+        (p.city ?? '').toLowerCase().includes(s) ||
+        (p.state ?? '').toLowerCase().includes(s)
+    );
+  }, [allPincodes, createPincodeSearch]);
+
+  const toggleCreatePincode = (pincode) => {
+    setCreatePincodes((prev) =>
+      prev.includes(pincode) ? prev.filter((p) => p !== pincode) : [...prev, pincode]
+    );
   };
 
   // ── Table columns ────────────────────────────────────────────────────────
@@ -245,8 +292,8 @@ export default function Admins() {
           <h2 className="text-lg font-bold">Admins</h2>
           <p className="text-sm text-muted-foreground">{admins?.length ?? 0} admin accounts</p>
         </div>
-        <Button id="invite-admin-btn" size="sm" className="gap-2" onClick={() => setInviteOpen(true)}>
-          <Plus className="w-4 h-4" /> Invite Admin
+        <Button id="create-admin-btn" size="sm" className="gap-2" onClick={() => setCreateOpen(true)}>
+          <Plus className="w-4 h-4" /> Create Admin
         </Button>
       </div>
 
@@ -261,40 +308,112 @@ export default function Admins() {
         </CardContent>
       </Card>
 
-      {/* ── Invite dialog ─────────────────────────────────────────────── */}
-      <Dialog open={inviteOpen} onOpenChange={setInviteOpen}>
-        <DialogContent className="max-w-sm">
-          <DialogHeader><DialogTitle>Invite Admin</DialogTitle></DialogHeader>
-          <div className="space-y-3">
+      {/* ── Create Admin dialog ───────────────────────────────────────── */}
+      <Dialog
+        open={createOpen}
+        onOpenChange={(open) => {
+          if (!open) {
+            setCreateOpen(false);
+            resetCreate();
+            setCreatePincodes([]);
+            setCreatePincodeSearch('');
+          }
+        }}
+      >
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>Create New Admin</DialogTitle>
+          </DialogHeader>
+          <form
+            onSubmit={handleSubmitCreate((d) => createMutation.mutate(d))}
+            className="space-y-3"
+          >
             <div className="space-y-1.5">
-              <Label htmlFor="invite-email">Email Address</Label>
+              <Label htmlFor="create-name">Full Name *</Label>
+              <Input id="create-name" placeholder="Asha Verma" {...registerCreate('name')} />
+              {createErrors.name && <p className="text-xs text-destructive">{createErrors.name.message}</p>}
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="create-email">Email *</Label>
+              <Input id="create-email" type="email" placeholder="asha@zynkly.com" {...registerCreate('email')} />
+              {createErrors.email && <p className="text-xs text-destructive">{createErrors.email.message}</p>}
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="create-phone">Phone *</Label>
+              <Input id="create-phone" type="tel" placeholder="9876543210" {...registerCreate('phone')} />
+              {createErrors.phone && <p className="text-xs text-destructive">{createErrors.phone.message}</p>}
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="create-password">Password *</Label>
+              <Input id="create-password" type="text" placeholder="min 8 chars" {...registerCreate('password')} />
+              {createErrors.password && <p className="text-xs text-destructive">{createErrors.password.message}</p>}
+              {!createErrors.password && (
+                <p className="text-xs text-muted-foreground">Share with the new admin — they will use this to log in</p>
+              )}
+            </div>
+
+            {/* Assigned pincodes picker */}
+            <div className="space-y-1.5">
+              <Label>Assigned Pincodes *</Label>
+              <p className="text-xs text-muted-foreground">
+                {createPincodes.length === 0
+                  ? 'Select at least one — admin will only see data in these pincodes'
+                  : `${createPincodes.length} selected`}
+              </p>
+              {createPincodes.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 p-2 rounded-lg bg-muted/40 border border-border">
+                  {createPincodes.map((pc) => (
+                    <Badge
+                      key={pc}
+                      variant="secondary"
+                      className="font-mono text-xs gap-1 cursor-pointer hover:bg-destructive/10 hover:text-destructive"
+                      onClick={() => toggleCreatePincode(pc)}
+                    >
+                      {pc}<X className="w-3 h-3" />
+                    </Badge>
+                  ))}
+                </div>
+              )}
               <Input
-                id="invite-email"
-                type="email"
-                placeholder="newadmin@zynkly.com"
-                value={inviteEmail}
-                onChange={(e) => setInviteEmail(e.target.value)}
+                placeholder="Search pincode, city or state..."
+                value={createPincodeSearch}
+                onChange={(e) => setCreatePincodeSearch(e.target.value)}
+                className="h-8 text-sm"
               />
+              <div className="border border-border rounded-lg overflow-y-auto max-h-40 divide-y divide-border">
+                {createFilteredPincodes.length === 0 ? (
+                  <p className="text-sm text-muted-foreground text-center py-4">No pincodes found</p>
+                ) : (
+                  createFilteredPincodes.map((p) => {
+                    const checked = createPincodes.includes(p.pincode);
+                    return (
+                      <button
+                        key={p.id}
+                        type="button"
+                        onClick={() => toggleCreatePincode(p.pincode)}
+                        className={`w-full flex items-center justify-between px-3 py-1.5 text-sm hover:bg-muted/50 ${checked ? 'bg-primary/5' : ''}`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono font-medium">{p.pincode}</span>
+                          <span className="text-muted-foreground text-xs">
+                            {[p.city, p.state].filter(Boolean).join(', ')}
+                          </span>
+                        </div>
+                        {checked && <Check className="w-4 h-4 text-primary" />}
+                      </button>
+                    );
+                  })
+                )}
+              </div>
             </div>
-            <div className="space-y-1.5">
-              <Label htmlFor="invite-role">Role</Label>
-              <Select value={inviteRole} onValueChange={setInviteRole}>
-                <SelectTrigger id="invite-role">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="admin">Admin</SelectItem>
-                  <SelectItem value="super_admin">Super Admin</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-          <DialogFooter>
-            <Button variant="outline" onClick={() => setInviteOpen(false)}>Cancel</Button>
-            <Button onClick={handleInvite} disabled={inviteLoading || !inviteEmail}>
-              {inviteLoading ? 'Sending…' : 'Send Invite'}
-            </Button>
-          </DialogFooter>
+
+            <DialogFooter>
+              <Button type="button" variant="outline" onClick={() => setCreateOpen(false)}>Cancel</Button>
+              <Button type="submit" disabled={createMutation.isPending}>
+                {createMutation.isPending ? 'Creating…' : 'Create Admin'}
+              </Button>
+            </DialogFooter>
+          </form>
         </DialogContent>
       </Dialog>
 
@@ -389,6 +508,49 @@ export default function Admins() {
             >
               {pincodeMutation.isPending ? 'Saving…' : 'Save Pincodes'}
             </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Credentials modal ─────────────────────────────────────────── */}
+      <Dialog
+        open={!!credentialsModal}
+        onOpenChange={(open) => { if (!open) setCredentialsModal(null); }}
+      >
+        <DialogContent className="max-w-sm">
+          <DialogHeader><DialogTitle>Admin Credentials</DialogTitle></DialogHeader>
+          {credentialsModal && (
+            <div className="space-y-3 text-sm">
+              <div className="rounded-md border bg-muted/50 p-3 space-y-2">
+                <p className="text-xs text-muted-foreground">
+                  Share these credentials with <strong>{credentialsModal.admin_name}</strong>.
+                  They will use them to log into the admin panel.
+                </p>
+                <div>
+                  <p className="text-xs text-muted-foreground">Login Email</p>
+                  <p className="font-mono font-medium break-all">{credentialsModal.login_email}</p>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground">Password</p>
+                  <p className="font-mono font-medium break-all">{credentialsModal.password}</p>
+                </div>
+              </div>
+              <p className="text-xs text-amber-600">⚠️ This password will not be shown again. Copy it now.</p>
+            </div>
+          )}
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => {
+                const text = `Zynkly Admin Panel Login\nEmail: ${credentialsModal?.login_email}\nPassword: ${credentialsModal?.password}`;
+                navigator.clipboard?.writeText(text);
+                toast.success('Credentials copied to clipboard');
+              }}
+            >
+              Copy
+            </Button>
+            <Button type="button" onClick={() => setCredentialsModal(null)}>Done</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>

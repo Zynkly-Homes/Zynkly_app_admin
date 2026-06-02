@@ -3,12 +3,18 @@ import { supabase } from '../lib/supabase';
 // ─── helpers ──────────────────────────────────────────────────────────────────
 
 /**
- * Build a PostgREST OR filter string that matches `address` against any
- * of the supplied pincodes via substring match.
- * e.g. pincodes=['411001','411002'] → "address.ilike.%411001%,address.ilike.%411002%"
+ * Flatten the booking_services join into a clean `services` array on each
+ * booking row and remove the raw `booking_services` key.
  */
-function buildAddressPincodeFilter(pincodes) {
-  return pincodes.map((p) => `address.ilike.%${p}%`).join(',');
+function flattenBookingServices(rows) {
+  return (rows || []).map(b => ({
+    ...b,
+    services: (b.booking_services || []).map(bs => ({
+      ...bs.services,
+      price_at_booking: bs.price_at_booking,
+    })),
+    booking_services: undefined,
+  }));
 }
 
 // ─── Bookings ─────────────────────────────────────────────────────────────────
@@ -29,8 +35,13 @@ export async function getBookings({ filters = {}, page = 0, pageSize = 20, pinco
     .select(
       `
       *,
-      user:users(id, name, phone, email),
-      cleaner:cleaners(id, name, phone)
+      user:users(id, name, phone, email, avatar_url),
+      cleaner:cleaners(id, name, phone, avatar_url, rating),
+      booking_services (
+        service_id,
+        price_at_booking,
+        services ( id, name, price, category, estimated_time )
+      )
     `,
       { count: 'exact' }
     )
@@ -39,7 +50,7 @@ export async function getBookings({ filters = {}, page = 0, pageSize = 20, pinco
 
   // Pincode scope — always applied first so it can be combined with other filters
   if (pincodes.length > 0) {
-    query = query.or(buildAddressPincodeFilter(pincodes));
+    query = query.in('pincode', pincodes);
   }
 
   // Use ilike for case-insensitive status match (DB may store PENDING or pending)
@@ -49,11 +60,11 @@ export async function getBookings({ filters = {}, page = 0, pageSize = 20, pinco
   }
   if (filters.from) query = query.gte('scheduled_at', filters.from);
   if (filters.to) query = query.lte('scheduled_at', filters.to);
-  if (filters.pincode) query = query.ilike('address', `%${filters.pincode}%`);
+  if (filters.pincode) query = query.eq('pincode', filters.pincode);
 
   const { data, error, count } = await query;
   if (error) throw error;
-  return { data: data ?? [], count: count ?? 0 };
+  return { data: flattenBookingServices(data), count: count ?? 0 };
 }
 
 /**
@@ -67,14 +78,19 @@ export async function getBookingById(id) {
       *,
       user:users(id, name, phone, email, created_at),
       cleaner:cleaners(id, name, phone, rating),
-      review:reviews(id, rating, comment, created_at)
+      review:reviews(id, rating, comment, created_at),
+      booking_services (
+        service_id,
+        price_at_booking,
+        services ( id, name, price, category, estimated_time )
+      )
     `
     )
     .eq('id', id)
     .single();
 
   if (error) throw error;
-  return data;
+  return flattenBookingServices([data])[0];
 }
 
 /**
@@ -116,10 +132,8 @@ export async function getDashboardStats(pincodes = []) {
   const todayStart = new Date(today.setHours(0, 0, 0, 0)).toISOString();
   const todayEnd = new Date(today.setHours(23, 59, 59, 999)).toISOString();
 
-  const pincodeFilter = pincodes.length > 0 ? buildAddressPincodeFilter(pincodes) : null;
-
   // Helper: apply pincode scope to a query if needed
-  const scoped = (q) => (pincodeFilter ? q.or(pincodeFilter) : q);
+  const scoped = (q) => (pincodes.length > 0 ? q.in('pincode', pincodes) : q);
 
   const [
     { count: totalToday },
@@ -182,13 +196,13 @@ export async function getRevenueData(days = 30, pincodes = []) {
 
   let query = supabase
     .from('bookings')
-    .select('scheduled_at, total_amount, service_ids')
+    .select('scheduled_at, total_amount, booking_services(service_id)')
     .not('total_amount', 'is', null)
     .gte('scheduled_at', from.toISOString())
     .order('scheduled_at', { ascending: true });
 
   if (pincodes.length > 0) {
-    query = query.or(buildAddressPincodeFilter(pincodes));
+    query = query.in('pincode', pincodes);
   }
 
   const { data, error } = await query;
@@ -214,7 +228,7 @@ export async function getRecentBookings(pincodes = []) {
     .limit(10);
 
   if (pincodes.length > 0) {
-    query = query.or(buildAddressPincodeFilter(pincodes));
+    query = query.in('pincode', pincodes);
   }
 
   const { data, error } = await query;

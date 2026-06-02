@@ -8,7 +8,7 @@ import { formatCurrency, formatDate, shortId } from '@/lib/utils';
  * Matches the actual Supabase schema:
  *   - users.name (not full_name)
  *   - bookings.total_amount (not total)
- *   - bookings.service_ids text[] (no service FK — join not available)
+ *   - services are joined via booking_services join table
  *   - no payment_status column on bookings
  */
 const columns = [

@@ -67,6 +67,61 @@ export async function deactivateAdmin(id) {
   return data;
 }
 
+/**
+ * Create a new admin via the create-admin Edge Function.
+ * Returns { success, admin, credentials, message } on success.
+ */
+export async function createAdmin(payload) {
+  const { data: { session } } = await supabase.auth.getSession();
+  if (!session) {
+    throw new Error('Not authenticated');
+  }
+
+  const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+  const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+  if (!supabaseUrl) {
+    throw new Error('Supabase URL is not configured');
+  }
+
+  const url = `${supabaseUrl}/functions/v1/create-admin`;
+
+  let response;
+  try {
+    response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${session.access_token}`,
+        'apikey': anonKey,
+      },
+      body: JSON.stringify(payload),
+    });
+  } catch (networkErr) {
+    throw new Error(`Network error calling create-admin: ${networkErr.message}`);
+  }
+
+  let body;
+  try {
+    body = await response.json();
+  } catch {
+    body = { error: `Server returned ${response.status} with non-JSON response` };
+  }
+
+  if (!response.ok) {
+    const message = body?.error || `Edge Function failed with status ${response.status}`;
+    const err = new Error(message);
+    err.status = response.status;
+    err.details = body?.details;
+    throw err;
+  }
+
+  if (!body?.success) {
+    throw new Error(body?.error || 'Unknown error from create-admin');
+  }
+
+  return body; // { success, admin, credentials, message }
+}
+
 // ─── Services ────────────────────────────────────────────────────────────────
 
 export async function getServices() {
