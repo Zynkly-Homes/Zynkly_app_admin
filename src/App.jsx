@@ -23,6 +23,7 @@ import CleanerDetail from '@/pages/cleaners/CleanerDetail';
 import Reviews from '@/pages/Reviews';
 import Revenue from '@/pages/Revenue';
 import Support from '@/pages/Support';
+import Operations from '@/pages/Operations';
 
 // Pages — super admin only
 import Admins from '@/pages/Admins';
@@ -129,6 +130,7 @@ export default function App() {
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/revenue" element={<Revenue />} />
                 <Route path="/support" element={<Support />} />
+                <Route path="/operations" element={<Operations />} />
               </Route>
             </Route>
 

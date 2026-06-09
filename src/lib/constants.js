@@ -67,6 +67,7 @@ export const NAV_ITEMS = [
   { path: '/reviews', label: 'Reviews', icon: 'Star', superAdminOnly: false },
   { path: '/revenue', label: 'Revenue', icon: 'TrendingUp', superAdminOnly: false },
   { path: '/support', label: 'Support', icon: 'Headphones', superAdminOnly: false },
+  { path: '/operations', label: 'Operations', icon: 'Power', superAdminOnly: false },
   // Super admin only
   { path: '/services', label: 'Services', icon: 'Sparkles', superAdminOnly: true },
   { path: '/pincodes', label: 'Pincodes', icon: 'MapPin', superAdminOnly: true },

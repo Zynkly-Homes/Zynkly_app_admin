@@ -3,7 +3,7 @@ import {
   LayoutDashboard, CalendarDays, Users, UserCheck,
   Star, TrendingUp, Headphones, Sparkles, MapPin,
   Shield, Clock, FileText, Settings, ChevronLeft, ChevronRight,
-  Droplets,
+  Droplets, Power,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAdmin } from '@/hooks/useAdmin';
@@ -13,7 +13,7 @@ import { NAV_ITEMS } from '@/lib/constants';
 const ICON_MAP = {
   LayoutDashboard, CalendarDays, Users, UserCheck,
   Star, TrendingUp, Headphones, Sparkles, MapPin,
-  Shield, Clock, FileText, Settings,
+  Shield, Clock, FileText, Settings, Power,
 };
 
 /**
