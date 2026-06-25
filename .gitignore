@@ -1,0 +1,32 @@
+# Dependency Files
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment — never commit secrets
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Vercel
+.vercel/
