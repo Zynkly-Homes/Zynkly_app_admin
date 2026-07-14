@@ -1,5 +1,14 @@
 {
-  "buildCommand": "npm install && cd zynkly-admin/backend && npm install",
-  "devCommand": "cd zynkly-admin/backend && npm run dev",
-  "installCommand": "npm install && cd zynkly-admin/backend && npm install"
+  "version": 2,
+  "buildCommand": "cd zynkly-admin/backend && npm install",
+  "installCommand": "npm install --legacy-peer-deps && cd zynkly-admin/backend && npm install --legacy-peer-deps",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "zynkly-admin/backend/src/server.js"
+    }
+  ]
 }

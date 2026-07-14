@@ -5,13 +5,9 @@
   "main": "zynkly-admin/backend/src/server.js",
   "scripts": {
     "start": "node zynkly-admin/backend/src/server.js",
-    "dev": "cd zynkly-admin/backend && npm run dev",
-    "build": "echo 'No build needed for backend'"
+    "dev": "cd zynkly-admin/backend && npm run dev"
   },
   "engines": {
     "node": "18.x"
-  },
-  "devDependencies": {
-    "vite": "^8.1.4"
   }
 }
