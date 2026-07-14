@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "installCommand": "npm install --legacy-peer-deps && cd zynkly-admin/backend && npm install --legacy-peer-deps",
-  "buildCommand": "echo 'Skipping build'",
+  "framework": null,
+  "installCommand": "npm install && cd zynkly-admin/backend && npm install",
+  "buildCommand": "echo 'No build needed'",
+  "devCommand": "cd zynkly-admin/backend && npm run dev",
   "env": {
     "NODE_ENV": "production"
-  },
-  "regions": ["iad1"],
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs18.x"
-    },
-    "zynkly-admin/backend/src/server.js": {
-      "runtime": "nodejs18.x"
-    }
   }
 }
