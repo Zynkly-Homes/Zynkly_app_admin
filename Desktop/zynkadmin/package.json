@@ -1,4 +1,16 @@
 {
+  "name": "zynkly-admin",
+  "version": "1.0.0",
+  "description": "Zynkly Admin Panel",
+  "main": "zynkly-admin/backend/src/server.js",
+  "scripts": {
+    "start": "node zynkly-admin/backend/src/server.js",
+    "dev": "cd zynkly-admin/backend && npm run dev",
+    "build": "echo 'No build needed for backend'"
+  },
+  "engines": {
+    "node": "18.x"
+  },
   "devDependencies": {
     "vite": "^8.1.4"
   }

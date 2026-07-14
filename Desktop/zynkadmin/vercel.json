@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm install && cd zynkly-admin/backend && npm install",
+  "devCommand": "cd zynkly-admin/backend && npm run dev",
+  "installCommand": "npm install && cd zynkly-admin/backend && npm install"
+}
