@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(npx eslint *)"
+    ],
+    "additionalDirectories": [
+      "/Users/navneetagarwal/Desktop/zynkly/backend/utils",
+      "/Users/navneetagarwal/Desktop/zynkly/backend/models",
+      "/Users/navneetagarwal/Desktop/zynkly/backend/routes",
+      "/Users/navneetagarwal/Desktop/zynkly/frontend/src/utils",
+      "/Users/navneetagarwal/Desktop/zynkly/frontend/src",
+      "/Users/navneetagarwal/Desktop/zynkly/backend/scripts"
+    ]
+  }
+}
