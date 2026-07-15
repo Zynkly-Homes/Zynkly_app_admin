@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(python3 -c ' *)",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(vercel --version)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://zynkly-app-admin.vercel.app/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://zynkly-app-admin.vercel.app/api)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://zynkly-app-admin.vercel.app/api/health)",
+      "Bash(curl -s https://zynkly-app-admin.vercel.app/api/health)",
+      "Bash(npm install *)",
+      "Bash(node -e ' *)",
+      "Bash(git check-ignore *)"
     ],
     "additionalDirectories": [
       "/Users/navneetagarwal/Desktop/zynkly/backend/utils",
