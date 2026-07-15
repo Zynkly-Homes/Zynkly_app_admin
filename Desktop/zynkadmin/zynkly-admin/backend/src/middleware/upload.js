@@ -1,10 +1,21 @@
 const multer = require('multer');
 const path = require('path');
+const fs = require('fs');
+const os = require('os');
 
-// Store files in memory (for cloud upload) or disk
+// Vercel's serverless filesystem is read-only except os.tmpdir(), and
+// that storage is ephemeral (wiped between invocations/containers) —
+// fine for local dev, but uploaded files won't persist in production.
+// Swap this for a cloud storage provider (S3, Cloudinary, Vercel Blob)
+// if uploaded images need to survive across requests.
+const uploadsDir = path.join(os.tmpdir(), 'zynkly-uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir, { recursive: true });
+}
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/');
+    cb(null, uploadsDir);
   },
   filename: (req, file, cb) => {
     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);

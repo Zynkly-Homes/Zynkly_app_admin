@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": "npm install --legacy-peer-deps && cd zynkly-admin/backend && npm install --legacy-peer-deps",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ]
+}
