@@ -10,7 +10,13 @@
       "Bash(curl -s https://zynkly-app-admin.vercel.app/api/health)",
       "Bash(npm install *)",
       "Bash(node -e ' *)",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(git -C /Users/navneetagarwal show e03e1ce0 -- Desktop/zynkadmin/package.json)",
+      "Bash(curl -s -w \"\\\\n%{http_code}\\\\n\" https://zynkly-app-admin.vercel.app/api/health)",
+      "Bash(vercel whoami *)",
+      "Read(//Users/navneetagarwal/**)",
+      "Bash(git ls-tree *)",
+      "Bash(grep -i \"vercel.json$\")"
     ],
     "additionalDirectories": [
       "/Users/navneetagarwal/Desktop/zynkly/backend/utils",
