@@ -1,6 +1,10 @@
 node_modules
 .git
 .DS_Store
-.env.local
+.env
+.env.*
 *.log
 .vercel
+.claude
+.vscode
+*.bak
